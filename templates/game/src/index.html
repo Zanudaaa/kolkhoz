@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+{% load static %}
 <head>
 	<title></title>
 	<meta charset="utf-8">
 	<meta name="description" content="game for js13k 2019">
 	<meta name="author" content="Luke Nickerson">
-	<link rel="stylesheet" href="moon.css" />
+	<link rel="stylesheet" href="{% static "css/moon.css" %}" type="text/css">
 </head>
 <body scroll="no">
 
@@ -43,12 +44,12 @@
 <b class="win">Успешная посадка!<br>Обновите страницу и попробуйте еще раз.</b>
 
 
-<script src="scripts/Polygon.js"></script>
-<script src="scripts/CompositePolygon.js"></script>
-<script src="scripts/Ship.js"></script>
-<script src="scripts/Input.js"></script>
-<script src="scripts/physics.js"></script>
-<script src="scripts/lunar-lander.js"></script>
+<script src="{% static "js/Polygon.js" %}"></script>
+<script src="{% static "js/CompositePolygon.js" %}"></script>
+<script src="{% static "js/Ship.js" %}"></script>
+<script src="{% static "js/Input.js" %}"></script>
+<script src="{% static "js/physics.js" %}"></script>
+<script src="{% static "js/lunar-lander.js" %}"></script>
 
 </body>
 </html>

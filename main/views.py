@@ -24,4 +24,4 @@ def contacts(request):
 
 
 def game(request):
-    return render(request, 'game/src/game.html', locals())
+    return render(request, 'game/src/index.html', locals())
