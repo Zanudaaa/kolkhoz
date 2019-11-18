@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="game for js13k 2019">
+	<meta name="author" content="Luke Nickerson">
+	<link rel="stylesheet" href="moon.css" />
+</head>
+<body scroll="no">
+
+<!-- <canvas id=terrain width=800 height=600></canvas> -->
+
+<svg id=display width=100% height=100%>
+	<!-- <polygon points="0 600, 0 450,
+		100 400, 0 0, 20 0, 120 400,
+		680 400, 780 0, 800 0, 700 400,
+		800 450, 800 600" /> -->
+</svg>
+<dl class="info-left">
+	<dt>ТОПЛИВО</dt><dd class="fuel"></dd><br>
+	<dt>ПРОЧНОСТЬ</dt><dd class="health"></dd>
+</dl>
+<dl class="info-right">
+	<dt>ВЫСОТА</dt><dd class="altitude"></dd><br>
+	<dt>ГОРЗОНТАЛЬНАЯ СКОРОСТЬ</dt><dd class="speedX"></dd><br>
+	<dt>ВЕРТИКАЛЬНАЯ СКОРОСТЬ</dt><dd class="speedY"></dd>
+</dl>
+<b class="intro">
+	<h1>Возврат на Луну</h1>
+	<p>
+	В 1969, 50 лет назад, человек впервые приземлился на Луну.
+	В том же году была выпущена первая <a href="https://ru.wikipedia.org/wiki/Space_Travel">лунная игра</a>, послужившая началом популярному жанру игр.
+	<br>"Эта игра является данью уважения этим явлениям".
+	</p>
+	<p>
+	Вы направяетесь назад на Луну. Ваша задача совершить мягкую посадку.
+	</p>
+	Вправо, влево = Поворачивать ... Вверх = Включение двигателя ... v1.0
+	<p>НАЖМИТЕ ВВЕРХ ДЛЯ СТАРТА</p>
+</b>
+<b class="failure">Вы приземлились слишком грубо и сломали аппарат. Вы никогда не вернетесь домой.<br>Обновите страницу и попробуйте еще раз.</b>
+<b class="win">Успешная посадка!<br>Обновите страницу и попробуйте еще раз.</b>
+
+
+<script src="scripts/Polygon.js"></script>
+<script src="scripts/CompositePolygon.js"></script>
+<script src="scripts/Ship.js"></script>
+<script src="scripts/Input.js"></script>
+<script src="scripts/physics.js"></script>
+<script src="scripts/lunar-lander.js"></script>
+
+</body>
+</html>
