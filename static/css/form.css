@@ -1,0 +1,29 @@
+.navbar {
+    background: #F97300;
+
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+body {
+    background: rgba(244, 244, 244, 1);
+}
+
+.description  {
+    margin: 10px;
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #fff;
+}
