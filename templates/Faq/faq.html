@@ -8,18 +8,17 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static "css/faq.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/about.css" %}">
     <title>FAQ</title>
 </head>
-<body>
+<body class="fade-in">
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand ">
-        <img src="http://lurkmore.so/images/thumb/5/54/Peka_namekaet.jpg/150px-Peka_namekaet.jpg" width="35"
-             height="35"
-             alt="navbar_logo_peka"
-             class="rounded-circle">
-
+      <img src="{% static "images/moon.png" %}" width="40em"
+           height="40em"
+           alt="moon"
+           class="rounded-circle">
     </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +26,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="http://127.0.0.1:8000/">Главная </a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:8000/">Главная </a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/news">Новости</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/game">Игра</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/about">Контакты</a>
-            <a class="nav-item nav-link" href="http://127.0.0.1:8000/faq">FAQ</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:8000/faq">FAQ</a>
             {% if request.user.is_authenticated %}
             <a class="nav-item nav-link">Привет, {{ user.get_username }}!</a>
             <a class="nav-item nav-link" href="http://127.0.0.1:8000/logout">Выход</a>
@@ -45,17 +44,21 @@
 
 <div class="container-fluid">
     <div class="jumbotron">
-        <h2>Правила</h2>
-
-
+        <h1>Часто задаваемые вопросы</h1>
+        {% for i in faq %}
+        <tr class='success'>
+            <h2><td>{{ i.faq_title }}</td></h2>
+            <b><td>{{ i.faq_describe }}</td></b>
+        </tr>
+        {% endfor %}
     </div>
 
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>

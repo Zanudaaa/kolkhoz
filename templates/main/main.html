@@ -8,18 +8,17 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/about.css" %}">
     <title>Курсатч</title>
 </head>
-<body>
+<body class="fade-in">
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand ">
-        <img src="http://lurkmore.so/images/thumb/5/54/Peka_namekaet.jpg/150px-Peka_namekaet.jpg" width="35"
-             height="35"
-             alt="navbar_logo_peka"
-             class="rounded-circle">
-
+      <img src="{% static "images/moon.png" %}" width="40em"
+           height="40em"
+           alt="moon"
+           class="rounded-circle">
     </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,14 +47,9 @@
 
         <div class="container">
             <div class="description text-left">
-                <h3>
-                    Привет, добро пожаловать на Курсатч.
-                    <p>
-
-                        Данный проект создан при поддержке бессоных ночей и желания продолжения обучения.
-                        Наслаждайтесь.</p>
-                    <a class="btn btn-outline-success" href="http://127.0.0.1:8000/game" role="button">Насладиться</a>
-                </h3>
+                <h3>Добро пожаловать.</h3>
+                <p>Данный проект создан при поддержке бессоных ночей и желания продолжения обучения. Наслаждайтесь.</p>
+                <a class="btn btn-outline-success" href="http://127.0.0.1:8000/game" role="button">Насладиться</a>
             </div>
         </div>
     </div>

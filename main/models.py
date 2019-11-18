@@ -14,3 +14,7 @@ class Contacts(models.Model):
 class Faq(models.Model):
     faq_title = models.CharField(max_length=50)
     faq_describe = models.TextField()
+
+class Fasaq(models.Model):
+    fasaq_title = models.CharField(max_length=50)
+    fasaq_describe = models.TextField()

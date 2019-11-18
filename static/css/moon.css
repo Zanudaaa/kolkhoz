@@ -1,6 +1,6 @@
 html, body {
 	margin: 0; height: 100%; overflow: hidden;
-	background: linear-gradient( rgba(12, 19, 19, 0.5), rgba(12, 19, 19, 0.5) ), url(img/123.png) center center fixed no-repeat;
+	background: linear-gradient( rgba(12, 19, 19, 0.5), rgba(12, 19, 19, 0.5) ), url(../images/123.png) center center fixed no-repeat;
 	 /* true bg is: rgb(12, 19, 19) */
 	font-family: 'Courier New', Courier, monospace;
 	color: rgb(162, 169, 169);
@@ -60,4 +60,17 @@ a:active {
 
 a:hover {
 	color: rgb(180, 180, 180);
+}
+
+.fade-in {
+  animation: FadeIn 3s;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }

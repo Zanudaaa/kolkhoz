@@ -14,6 +14,7 @@ def news(request):
     return render(request, 'news/news.html', locals())
 
 def faq(request):
+    faq = Faq.objects.all()
     return render(request, 'faq/faq.html', locals())
 
 def contacts(request):

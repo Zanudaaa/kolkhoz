@@ -4,3 +4,4 @@ from .models import *
 admin.site.register(News)
 admin.site.register(Faq)
 admin.site.register(Contacts)
+admin.site.register(Fasaq)
